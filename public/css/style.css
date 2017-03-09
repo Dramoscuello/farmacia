@@ -765,6 +765,7 @@ hr.bold {
 }
 .intro-med {
 	padding:200px 0 60px;
+  text-align: center;
 }
 .intro-content.intro-nobg {
 	background:#fff;

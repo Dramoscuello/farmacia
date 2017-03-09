@@ -9,7 +9,7 @@ var config = {
       name: 'farmacia'
     },
     port: process.env.PORT || 3000,
-    db: 'mongodb://localhost/farmacia-development'
+    db: 'mongodb://localhost/mibdFarmacia'
   },
 
   test: {
