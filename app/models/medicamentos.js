@@ -1,4 +1,4 @@
-var mongoose = require("mongoose"),
+/*var mongoose = require("mongoose"),
     Schema = mongoose.Schema;
 
 var Medicamentos = new Schema({
@@ -9,4 +9,4 @@ var Medicamentos = new Schema({
   imagen: String
 },{collection:'medicamentos'});
 
-mongoose.model('medicamentos', Medicamentos);
+mongoose.model('medicamentos', Medicamentos);*/

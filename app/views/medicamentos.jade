@@ -3,11 +3,11 @@ block content
   .intro-med
     .container
       .row
-      -for(var i=0; i<medicamentos.length: ++i}){
-        .col-sm-6
-          h3 #{medicamentos[i].medicamento}
-          img(src="img/"+medicamentos[i].imagen)
-          h4 Tipo: #{medicamentos[i].tipo}
-          h4 Laboratorio: #{medicamentos[i].laboratorio}
-          h4 Precio: #{medicamentos[i].precio}
+      -for(var i=0; i<medicamentos.length; ++i){
+        .col-sm-6.margin
+          h5=medicamentos[i].medicamento
+          img.img-responsive(src=medicamentos[i].imagen)
+          h6="Laboratorio: " + medicamentos[i].laboratorio
+          h6="Precio: " + medicamentos[i].precio
+          a.btn.btn-success(href="javascript:void(0)") Comprar
       -}
