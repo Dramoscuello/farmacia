@@ -3,7 +3,6 @@ var express = require('express'),
   mongoose = require('mongoose');
   //Medicamentos = mongoose.model("medicamentos");
 
-//var meds = ["a","b","c"]
 var meds  = [
   {medicamento: "Lansoprazol", imagen: "img/lansoprazol.jpg", laboratorio: "MK", precio: "$5000"},
   {medicamento: "Naproxeno", imagen: "img/naproxeno.jpg", laboratorio: "MK", precio: "$5000"},
@@ -16,9 +15,11 @@ module.exports = function (app) {
 };
 
 router.get('/medicamentos', function (req, res, next) {
-      res.render('medicamentos',{
-        medicamentos: meds
-      });
+  res.render('medicamentos',{
+    titulo: 'Comprar medicamentos',
+    medicamentos: meds
+  });
+
       /*Medicamentos.find(function(err, medicamentos){
         if(err) return next(err);
         res.render('medicamentos',{

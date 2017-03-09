@@ -6,8 +6,19 @@ block content
       -for(var i=0; i<medicamentos.length; ++i){
         .col-sm-6.margin
           h5=medicamentos[i].medicamento
-          img.img-responsive(src=medicamentos[i].imagen)
-          h6="Laboratorio: " + medicamentos[i].laboratorio
-          h6="Precio: " + medicamentos[i].precio
+          img(src=medicamentos[i].imagen)
+          h6="Laboratorio: "+medicamentos[i].laboratorio
+          h6="Precio: "+medicamentos[i].precio
           a.btn.btn-success(href="javascript:void(0)") Comprar
       -}
+
+
+      //-for(var i=0; i<medicamentos.length; ++i){
+        //.col-sm-6.margin
+          //h5 #{medicamentos[i].medicamento}
+          //img(src="img/"+medicamentos[i].imagen)
+          //h6 #{medicamentos[i].tipo}
+          //h6 #{medicamentos[i].laboratorio}
+          //h6 Precio:#{medicamentos[i].precio}
+          //a.btn.btn-success(href="javascript:void(0)") Comprar
+      //-}
