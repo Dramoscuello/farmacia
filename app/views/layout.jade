@@ -40,15 +40,23 @@ html(lang='es')
           .collapse.navbar-collapse.navbar-right.navbar-main-collapse
             ul.nav.navbar-nav
               li.active
-                a(href='#intro') Inicio
+                a(href='/') Inicio
               li
                 a(href='#service') Servicios
-              li
-                a(href='#') Descuentos
-              li
-                a(href='#') Categorias
-              li
-                a(href='#') Contactanos
+              li.dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown')
+                  span.badge.custom-badge.red.pull-right
+                  | Productos
+                  b.caret
+                ul.dropdown-menu
+                  li
+                    a(href='#') Alimento y bebidas
+                  li
+                    a(href='#') Aseo y hogar
+                  li
+                    a(href='#') Maquillaje y accesorios
+                  li
+                    a(href='/medicamentos') Medicina formulada
               li.dropdown
                 a.dropdown-toggle(href='#', data-toggle='dropdown')
                   span.badge.custom-badge.red.pull-right
@@ -56,9 +64,9 @@ html(lang='es')
                   b.caret
                 ul.dropdown-menu
                   li
-                    a(href='index.html') Iniciar sesion
+                    a(href='#') Iniciar sesion
                   li
-                    a(href='index.html') Registrarme
+                    a(href='#') Registrarme
               li.dropdown
                 a.dropdown-toggle(href='#', data-toggle='dropdown')
                   span.badge.custom-badge.red.pull-right 0
