@@ -1,5 +1,5 @@
 /*
-    Theme Name: Medicio
+    Theme Name:.content
     Theme URL: https://bootstrapmade.com/medicio-free-bootstrap-theme/
     Author: BootstrapMade
     Author URL: https://bootstrapmade.com
@@ -8,7 +8,16 @@
 /* ==== Google font ==== */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,700,800|Roboto:400,500,700,900');
 /* --- pe-icon-7-stroke --- */
+.img-r{
 
+	position: absolute;
+	width: 0;
+	-webkit-transition:width 0.3s .linear 0s;
+transition: :width 0.3s .linear 0s;
+}
+.img:hover + .img-r {
+	width: 500px;
+}
 .margin{
   margin-bottom: 10%;
 }
@@ -17,13 +26,16 @@
   width: 100%;
   margin-bottom: 5%;
 }
+.content{
+	background:white;
+}
 body {
     width: 100%;
     height: 100%;
     font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
     color: #666;
-    background-color: #ddd;
+    background-color: white;
 	font-size: 16px;
     line-height: 1.6em;
 }
@@ -92,7 +104,8 @@ h5 {
 	font-size: 24px;
 }
 h6 {
-	font-size: 20px;
+	font-size: 17px;
+	text-align: left;
 }
 
 h1,
@@ -101,8 +114,8 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 30px;
-    font-family: 'Roboto', sans-serif;
+   
+    font-family: 'fantasy', sans-serif;
     font-weight: 400;
 	color: #444;
 	line-height: 1em;
@@ -917,7 +930,7 @@ form.lead label,form.lead input {
 	margin-bottom: 20px;
 }
 .cta-btn {
-	float:right;
+	float:left;
 	padding:20px 10px 20px 20px;
 	margin-top:10px;
 }
@@ -1653,13 +1666,12 @@ a.scrollup i:hover {
 	display: inline-block;
 	outline: none;
 	color: #fff;
+	margin-right:100%;
 	text-decoration: none;
-	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 400;
 	text-shadow: 0 0 1px rgba(255,255,255,0.3);
 	font-size: 14px;
-
 	font-weight: 700;
 }
 
@@ -1785,7 +1797,7 @@ a.btn:focus{
 }
 
 .options_box h6 {
-	text-align:center;
+	text-align:left;
 	font-weight:bold;
 }
 
@@ -2046,10 +2058,8 @@ a.btn:focus{
 		text-align: center;
 	}
 
-	.cta-btn {
-		float: none;
-		text-align: center;
-	}
+
+
 
 	.sub-footer p {
 		float: none;
