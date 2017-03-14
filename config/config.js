@@ -8,7 +8,7 @@ var config = {
     app: {
       name: 'farmacia'
     },
-    port: process.env.PORT || 3000,
+    port: process.env.PORT || 8080,
     db: 'mongodb://localhost/dbfarmacia2'
   },
 
@@ -17,7 +17,7 @@ var config = {
     app: {
       name: 'farmacia'
     },
-    port: process.env.PORT || 3000,
+    port: process.env.PORT || 8080,
     db: 'mongodb://localhost/farmacia-test'
   },
 
@@ -26,7 +26,7 @@ var config = {
     app: {
       name: 'farmacia'
     },
-    port: process.env.PORT || 3000,
+    port: process.env.PORT || 8080,
     db: 'mongodb://localhost/farmacia-production'
   }
 };
