@@ -9,7 +9,7 @@
 }
 
 #live-chat header {
-    background: #293239;
+    background: #3FBBC0;
     border-radius: 5px 5px 0 0;
     color: #fff;
     cursor: pointer;
@@ -45,6 +45,7 @@
     padding: 8px;
     outline: none;
     width: 234px;
+    margin-bottom: 2%;
 }
 
 .chat-close {
@@ -87,4 +88,8 @@
 .chat-time {
     float: right;
     font-size: 10px;
+}
+
+.btn-enviar{
+  background-color: #3FBBC0;
 }

@@ -30,39 +30,11 @@ html(lang='es')
       .chat
         .chat-history
           .chat-message.clearfix
-            img(src='http://lorempixum.com/32/32/people', alt='', width='32', height='32')
-            .chat-message-content.clearfix
-              span.chat-time 13:35
-              h5 John Doe
-              p
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, explicabo quasi ratione odio dolorum harum.
-            // end chat-message-content
-          // end chat-message
-          hr
-          .chat-message.clearfix
-            img(src='http://gravatar.com/avatar/2c0ad52fc5943b78d6abe069cc08f320?s=32', alt='', width='32', height='32')
-            .chat-message-content.clearfix
-              span.chat-time 13:37
-              h5 Marco Biedermann
-              p
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, nulla accusamus magni vel debitis numquam qui tempora rem voluptatem delectus!
-            // end chat-message-content
-          // end chat-message
-          hr
-          .chat-message.clearfix
-            img(src='http://lorempixum.com/32/32/people', alt='', width='32', height='32')
-            .chat-message-content.clearfix
-              span.chat-time 13:38
-              h5 John Doe
-              p Lorem ipsum dolor sit amet, consectetur adipisicing.
-            // end chat-message-content
-          // end chat-message
-          hr
-        // end chat-history
-        form(action='#', method='post')
+            ul(id="messages")
+        form(action='#', method='post' id="chatter")
           fieldset
             input(type='text', placeholder='Type your message…', autofocus='')
-            input(type='hidden')
+            button.btn.btn-enviar Enviar
     #wrapper
       nav.navbar.navbar-custom.navbar-fixed-top(role='navigation')
         .top-area
